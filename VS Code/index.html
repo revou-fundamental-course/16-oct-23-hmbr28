@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./img/logo revou.png" alt="revou-logo">
+        </div>
+        <nav class="nav">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Our Profile</a>
+            <a class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="greetings">
+            <h1>Hi, my name is ilham</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </div>
+    </section>
+    <section class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="hq-items">
+            <div class="circle">
+                <img src="./img/jakarta.jpg" alt="revou-logo">
+                <h1 class="circle-text">Jakarta</h1>
+            </div>
+            <div class="circle">
+                <img src="./img/bandung.jpg" alt="revou-logo">
+                <h1 class="circle-text">Bandung</h1>
+            </div>
+            <div class="circle">
+                <img src="./img/jogjakarta.jpg" alt="revou-logo">
+                <h1 class="circle-text">Jogjakarta</h1>
+            </div>
+        </div>
+    </section>
+    <section id="message-us" class="form">
+        <h1>Message Us </h1>
+        <div class="form-items">
+            <div class="form-left">
+                <form name="message-form">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>
+                                <input class="input" name="nama" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td>
+                                <input class="input" name="tgl_lahir" type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input name="gender" type="radio" value="Laki-laki"> Laki Laki
+                                <input name="gender" type="radio" value="Perempuan"> Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td>
+                                <input class="input" name="pesan" type="textarea">
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="btn" type="button" id="btn-submit">Submit</button>
+                </form>
+            </div>
+            <div class="form-right">
+                <div class="box">
+                    <p>Nama : <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                    <p>Pesan : <span id="sender-messages"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <center>
+            <p class="footer-text">made by ilham</p>
+        </center>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
